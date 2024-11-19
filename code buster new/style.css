@@ -1,0 +1,130 @@
+body{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	background-color:#f4f4f4;
+	background-image: url(screen.png);
+	background-size: cover; /* Makes the background cover the entire element */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Avoids image repetition */
+  background-attachment: fixed;
+	
+}
+.container{
+
+}
+
+.heading{
+
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	background-image: url(new.png);
+	background-repeat: no-repeat;
+	
+
+}
+.heading h1{
+	font:Envato;	
+}
+
+.StartButton{
+	padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+	  position: absolute;
+	  bottom: 20px;
+	  left: 50%;
+
+}
+.StartButton:hover{
+	background-color: red;
+}
+.Robo{
+	float: right;
+	margin-bottom: 300px;
+}
+/* Rule box */
+.rule-Box{
+	display: flex;
+	align-items:center ;
+	margin-top: 20px;
+	padding: 20px;
+	/* background-color: #f0f0f0; */
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	width: 50%;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	/* position: absolute; */
+	bottom: 30px;
+	left: 25%;
+	margin
+}
+.rule-Box h2{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.rule-Box p{
+	font-size:16px;
+	line-height: 1.5;
+}
+
+/* Quiz Question Styling */
+.quiz-Container{
+	border: 5px solid black;
+	border-radius: 10px;
+	width: 800px;
+	height: 257px;
+	display: none;
+	margin: 20px;
+	position: absolute;
+	top: 250px;
+	/* left: 30%; */
+	align-items: center;
+	overflow-y: auto;
+}
+.quiz-question{
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.quiz-options{
+	display: flex;
+      flex-direction: column; /* Stack options vertically */
+      align-items: center;
+      margin-top: 20px;
+	margin-bottom: 20px;
+}
+.quiz-timer {
+	display: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin: 10px 0;
+}
+.quiz-option{
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #f4f4f4;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.quiz-option:hover{
+	background-color: lightgoldenrodyellow;
+}
+/* Score  */
+.score-container{
+	display: none;
+	position: absolute;
+	/* align-items: center; */
+	left: 40%;
+	bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}

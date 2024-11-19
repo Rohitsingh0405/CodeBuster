@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technical Quiz </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="heading">
+			<h1>CODE BUSTER</h1>
+		</div> 
+		
+		<button class="StartButton" id="startbutton" onclick="showRules()">Start</button>
+		<div class="quiz-timer" id="quizTimer">Time left: 30s</div> 
+		<div class="rule-Box" id="rulebox">
+			<h2>Quiz Round</h2>
+			<p>1. This is a MCQ Round </p>
+			<p>2. There will be 30 question of 1 marks each</p>
+			<p>3. A minimum marks to <br> &nbsp;&nbsp;&nbsp;&nbsp; to qualify the round 
+				<br> &nbsp;&nbsp;&nbsp;&nbsp; will be decided by the coordinators</p>
+			
+			<button class="StartButton" onclick="startQuiz()">Start Quiz</button>
+			
+		</div>
+		<div class="Robo">
+
+			<img src="Purple_Futuristic_Technology_Presentation-removebg-preview.png" alt="ROBOT" >
+		</div>
+		<!-- Question block ya quiz container -->
+		<div class="quiz-Container" id="quizContainer">
+			<div class="quiz-question" id="questiontext">Question are here</div>
+			<div class="quiz-options">
+				<button class="quiz-option" id="optionA">option A</button>
+				<button class="quiz-option" id="optionB">option B</button>
+				<button class="quiz-option" id="optionC">option C</button>
+				<button class="quiz-option" id="optionD">option D</button>
+
+			</div>
+		</div>
+		<!-- Score Box -->
+		<div class="score-container" id="scoreContainer">
+			<div>You score is <span id="score"></span></div>
+		</div>
+	</div>
+	<script src="Script.js"></script>
+</body>
+</html>
